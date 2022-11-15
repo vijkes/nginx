@@ -1,0 +1,130 @@
+netstat -tnlp
+    2  cd /etc/nginx/sites-available
+    3  cd /etc/nginx
+    4  node --version
+    5  systemctl status nginx
+    6  ng --version
+    7  apt-get install nginx
+    8  systemctl status nginx
+    9  cd /etc/nginx/sites-available/
+   10  ll
+   11  vi node_or_angular_app.conf
+   12  curl 172.31.32.68
+   13  curl 172.31.32.68:3000
+   14  vi node_or_angular_app.conf
+   15  systemctl restart nginx
+   16  ll
+   17  vim /etc/nginx/sites-available/
+   18  ll
+   19  vim node_or_angular_app.conf 
+   20  nginx -t
+   21  systemctl restart nginx
+   22* mv /var/www/html/
+   23  vim node_or_angular_app.conf 
+   24  vim /etc/systemd/system/NodeServer.service
+   25  nginx -t
+   26  systemctl restart nginx
+   27* cd /var/www/html/
+   28  cd /var/www
+   29  ll
+   30  mv index.nginx-debian.html html/
+   31  ll
+   32  cd -
+   33  systemctl status NodeServer
+   34  systemctl start NodeServer
+   35  systemctl start NodeServer.service
+   36  systemctl status NodeServer.service
+   37  which node
+   38  vim /etc/systemd/system/NodeServer.service 
+   39  curl localhost:3000
+   40  vim /etc/systemd/system/NodeServer.service 
+   41  curl localhost
+   42  vim /etc/systemd/system/NodeServer.service 
+   43  cd 
+   44  cd /var/www/html/
+   45  ll
+   46  cd
+   47  ll
+   48  cd node_app/
+   49  ll
+   50  npm -m --port=3001
+   51  npm app.js --port=3001
+   52  npm app.js
+   53  npm -v
+   54  npm app.js --port 3001
+   55  ExecStart=npm start -- --port=3000
+   56  Message @Riyaz
+   57  ExecStart=npm start -- --port=3000
+   58  history
+   59  vim /etc/systemd/system/NodeServer.service 
+   60  systemctl restart nginx
+   61  systemtcl restart NodeServer.service
+   62  systemctl restart NodeServer.service
+   63  systemctl daemon-reload
+   64  systemctl restart NodeServer.service
+   65  systemctl status  NodeServer.service
+   66  ll
+   67  node start --port 3001
+   68  node start app.js --port 3001
+   69  ll
+   70  pwd
+   71  vim app.js 
+   72  history
+   73  vim /etc/systemd/system/NodeServer.service 
+   74  systemctl daemon-reload
+   75  systemtcl restart NodeServer.service
+   76  systemctl restart NodeServer.service
+   77  systemctl stop NodeServer.service
+   78  systemctl start NodeServer.service
+   79  systemctl status NodeServer.service
+   80  vim /etc/systemd/system/NodeServer.service 
+   81  systemctl daemon-reload
+   82  systemctl stop NodeServer.service
+   83  systemctl start NodeServer.service
+   84  systemctl status NodeServer.service
+   85  ll
+   86  systemctl restart NodeServer.service
+   87  systemctl status NodeServer.service
+   88  netstat -tnlp
+   89  whereis 18.220.197.174
+   90  whereis ng serve
+   91  cd /root/.nvm/versions/node/v18.12.1
+   92  ll
+   93  history
+   94  netstat -tnlp
+   95  kill 15903
+   96  netstat -tnlp
+   97  systemctl daemon-reload
+   98  systemctl stop NodeServer.service
+   99  systemctl start NodeServer.service
+  100  systemctl status NodeServer.service
+  101  curl localhost:3000
+  102  curl localhost
+  103  history
+  104  cd /etc/nginx/
+  105  ll
+  106  cd sites-enabled/
+  107  ll
+  108  cd ..
+  109  cd
+  110  ln -s /etc/nginx/sites-available/node_or_angular_app.conf /etc/nginx/sites-enabled/
+  111  nginx -t
+  112  vim /etc/nginx/sites-available/node_or_angular_app.conf 
+  113  hostname 
+  114  vim /etc/nginx/sites-available/node_or_angular_app.conf 
+  115  nginx -t
+  116  systemctl restart n ginx 
+  117  systemctl restart nginx 
+  118  history
+  
+    412  sudo vim /etc/nginx/nginx.conf
+	
+	 server {
+                listen 80;
+                listen  [::]:80;
+                server_name     _;
+
+                location / {
+                   proxy_pass http://localhost:3000;
+                        }
+                        }
